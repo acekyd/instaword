@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src='scripts/jquery-1.6.1.min.js'></script>
+    <script src="scripts/parse.js"></script>
+    <script src="scripts/fetch.js"></script>
+    <link rel="stylesheet" href="styles/post.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="popup">
+    	<img src="images/logo.png" id="logo" />
+        <br clear="all" />
+        <p style="text-align:center">You are searching for: <br>
+        <form id="re-search" style="text-align:center;">
+        <input type="text" id="keyword" name="keyword"/>
+        <input id="save" type="submit" value="Search again" />
+        <div id="loader">
+        <img src="images/ajaxloader.gif" />
+        </div>
+        <p style="display:none;"><label for="summary">Summary</label><br />
+            <textarea id="summary" name="summary" rows="6" cols="35"></textarea></p>
+            <span id="status-display"></span>
+    </div>
+  </body>
+</html>
